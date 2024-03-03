@@ -1,0 +1,31 @@
+.instrument-card {
+    width: 550px;
+    height: 16vh;
+    background-color: rgb(221, 220, 228);
+    border-radius: 7px;
+    font-size: 10px;
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    color: black;
+    
+    justify-content: space-between;
+    padding: 10px 15px;
+    flex-direction: row;
+    transition: 0.7s;
+}
+
+.instrument-card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: rgb(217, 215, 224);
+}
+
+.instrument-img {
+    border-radius: 7px;
+    margin-right: 10px;
+}
+
+.desc {
+    text-align: center;
+}

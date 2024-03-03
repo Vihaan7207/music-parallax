@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./components/Header/Header";
+import Text from "./components/Text/Text";
+import InstrumentList from "./components/InstrumentList/InstrumentList";
+import guitar1 from './images/guitar-1.webp';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="container">
+      <Header/>
+      <br/>
+      <Text content={"Example store contains the finest instruments from all around the world. We can assure you that any purchase made will be only the finest quality."}/>
+      <InstrumentList/>
     </div>
-  );
+  )
 }
-
-export default App;
